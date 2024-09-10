@@ -10,10 +10,12 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     padding: 20px;
-    text-align: center;
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center;
 }
 
 header h1 {
@@ -21,15 +23,15 @@ header h1 {
     font-size: 2.5em;
 }
 
-/* Navigation (optional, if you want to add) */
 nav {
-    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    gap: 20px; /* Space between links */
 }
 
 nav a {
-    color: #fff;
+    color: #fff; /* White text */
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -66,13 +68,36 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for separation */
+    margin-bottom: 40px; /* Space between sections */
+}
+
+#about {
+    background-color: #e3f2fd; /* Light blue for distinction */
+}
+
+#portfolio {
+    background-color: #fce4ec; /* Light pink for distinction */
+}
+
+#contact {
+    background-color: #f3e5f5; /* Light purple for distinction */
+}
+
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #000; /* Black background for footer */
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -82,15 +107,6 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-/* Section Styling */
-section {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Buttons */
